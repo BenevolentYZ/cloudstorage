@@ -52,8 +52,8 @@
                                 <tr th:unless="${#lists.isEmpty(files)}"
                                     th:each="file : ${files}">
                                     <td>
-                                        <a th:href="@{/files/view/{fileId}(fileId=${file.fileId})}" target="_blank" class="btn btn-success">View</a>
-                                        <a th:href="@{/files/delete/{fileId}(fileId=${file.fileId})}" class="btn btn-danger">Delete</a>
+                                        <a th:href="@{/file/view/{fileId}(fileId=${file.fileId})}" target="_blank" class="btn btn-success">View</a>
+                                        <a th:href="@{/file/delete/{fileId}(fileId=${file.fileId})}" class="btn btn-danger">Delete</a>
                                     </td>
                                     <th th:text="${file.name}" scope="row">ExampleFile.txt</th>
                                 </tr>
